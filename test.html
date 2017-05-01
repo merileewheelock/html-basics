@@ -1,0 +1,74 @@
+<!-- This is a comment -->
+<!-- The doctype will tell the browser how it should process. -->
+<!DOCTYPE html>
+<!-- HTML tag wraps all HTML on this page. -->
+<html>
+<!-- Head contains all stuff the user shouldn't see
+-script
+-link (css)
+-meta tags -->
+<head>
+	<!-- The title tag tells the browser what to put on the browser tab. It is also a big deal to search engines. -->
+	<title>Our first HTML page</title>
+	<meta name="name" content="content"> <!-- Used to tell the browser about your page -->
+</head>
+<!-- Body tag is where the stuff or content that makes up the document goes -->
+<body id="an-id" class="a-class"> <!-- id and class are attributes -->
+
+	Hello, world.
+
+	<!-- These are semantic tags. They change how the content behaves. -->
+	<strong>This is a bold tag.</strong>
+	<em>This is an italic tag.</em>
+	<sup>I am a superscript tag.</sup>
+	<sub>I am a subscript tag.</sub>
+	<abbr>This is an abbr</abbr> <!-- Would need to do more with this -->
+	<h1>This is an H1 tag</h1>
+	<h2>This is an H2 tag</h2>
+	<h3>This is an H3 tag</h3>
+	<h4>This is an H4 tag</h4>
+	<h5>This is an H5 tag</h5>
+	<h6>This is an H6 tag</h6>
+
+	<blockquote>
+		How terrible is wisdom when it brings no profit to the wise. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This I knew too well else I would not have come here.
+		<!-- &nbsp; is a non breaking space -->
+		<br /> <!-- This is a break rule -->
+		<hr /> <!-- This is a horizontal rule -->
+		<cite>Robert Bunch</cite> <!-- This becomes italicized -->
+	</blockquote>
+
+	<!-- Semantic tags are meant to manage the layout of a page -->
+	<div class="a-div" id="my-anchor">
+		The div I'm inside of is invisible!
+	</div>
+
+	<p>
+		The paragraph tag I'm inside of is for structure!
+	</p>
+
+	<span>The span I'm inside of is invisible!</span>
+
+	<!-- List tags! -->
+	<ul> <!-- Unordered list -->
+		<li>Merilee</li>
+		<li>Shane</li>
+		<li>Chris</li>
+		<li>Stephen</li>
+		<li>Staff:</li>
+			<ol> <!-- Ordered list -->
+				<li><a href="http://www.espn.com">Rob</a></li>
+				<li><a href="#my-anchor">Jake</a></li> <!-- This links back to the id earlier on this page. -->
+				<li><a href="photo-gallery.html">Max</a></li> <!-- Relative link: This links to another page in the same directory. -->
+				<li><a href="mailto:toby@digitalcrafts.com">Toby</a></li>
+				<li><a href="tel:14045551234">Natalie</a></li>
+			</ol>
+	</ul>
+
+	<img src="http://www.digitalcrafts.com/sites/all/themes/digitalcrafts/images/digitalcrafts-site-logo.png" />
+
+	<footer>
+	</footer>
+
+</body>
+</html>

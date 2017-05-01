@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Places to visit in Georgia</title>
+
+	<style type="text/css" media="screen">
+		/* Inside here is CSS. */
+
+		#gallery-wrapper{
+			text-align: center;
+		}
+
+		#middle-section img{
+			width: 15%;
+			border:  4px solid #0f0; /* width type color */
+			/* border-width: 4px 4px 4px 4px;
+			border-width: 4px 4px 4px; top right/left bottom
+			border-width: 4px 4px; top/bottom right/left
+			border-width: 4px;
+			border-style: solid;
+			border-color: #0f0; */
+		}
+
+		#bottom-section img{
+			width: 45%;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="gallery-wrapper">
+	<!-- The entire gallery -->
+		<div id="top-section">
+		<!-- Top -->
+			<h1>
+				A simple photo gallery made with CSS, HTML, and a little bit of love.
+			</h1>
+		</div>
+		<div id="middle-section">
+		<!-- Middle -->
+			<img src="./ga_pics/arabia_mnt.jpg" onclick="bigPic.src = this.src" />
+			<img src="./ga_pics/callaway_gardens.jpg" onclick="bigPic.src = this.src" />
+			<img src="./ga_pics/Etowah_Indian_Mounds.jpg" onclick="bigPic.src = this.src" />
+			<img src="./ga_pics/prov_state_canyon.jpg" onclick="bigPic.src = this.src" />
+			<img src="./ga_pics/wormsloe.jpg" onclick="bigPic.src = this.src" />
+		</div>
+		<div id="bottom-section">
+		<!-- Bottom -->
+			<img src="./ga_pics/arabia_mnt.jpg" name="bigPic" />
+		</div>
+	<!-- Gallery close -->
+	</div>
+
+</body>
+</html>

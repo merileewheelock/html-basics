@@ -10,7 +10,7 @@
 			text-align: center;
 		}
 
-		#middle-section img{
+		#middle-section img{ /* The space means that img is a child of picture-gallery */
 			width: 15%;
 			border:  4px solid #0f0; /* width type color */
 			/* border-width: 4px 4px 4px 4px;
@@ -22,8 +22,19 @@
 		}
 
 		#bottom-section img{
-			width: 45%;
+			width: 45%; /* !important; - This can be used to overwrite something, not good practice to use */
 		}
+
+		.caption{ /* These are classes */
+			font-family: 'Quattrocento Sans', sans-serif;
+			font-size: 20px;
+			font-weight: bold;
+			color: red;
+		}
+
+		div.caption{
+			color: blue;
+			border: solid 4px black;
 
 	</style>
 
@@ -40,11 +51,17 @@
 		</div>
 		<div id="middle-section">
 		<!-- Middle -->
-			<img src="./ga_pics/arabia_mnt.jpg" onclick="bigPic.src = this.src" />
-			<img src="./ga_pics/callaway_gardens.jpg" onclick="bigPic.src = this.src" />
-			<img src="./ga_pics/Etowah_Indian_Mounds.jpg" onclick="bigPic.src = this.src" />
-			<img src="./ga_pics/prov_state_canyon.jpg" onclick="bigPic.src = this.src" />
-			<img src="./ga_pics/wormsloe.jpg" onclick="bigPic.src = this.src" />
+<!-- 			<div class="caption one">
+				This is a caption!
+			</div>
+			<div class="caption two">
+				This is a caption!
+			</div> -->
+			<img class="one" src="./ga_pics/arabia_mnt.jpg" onclick="bigPic.src = this.src" />
+			<img class="two" src="./ga_pics/callaway_gardens.jpg" onclick="bigPic.src = this.src" />
+			<img class="three" src="./ga_pics/Etowah_Indian_Mounds.jpg" onclick="bigPic.src = this.src" />
+			<img class="four" src="./ga_pics/prov_state_canyon.jpg" onclick="bigPic.src = this.src" />
+			<img class="five" src="./ga_pics/wormsloe.jpg" onclick="bigPic.src = this.src" />
 		</div>
 		<div id="bottom-section">
 		<!-- Bottom -->
